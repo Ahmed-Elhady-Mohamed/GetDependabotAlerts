@@ -1,8 +1,8 @@
 import os
 import requests
 
-GITHUB_TOKEN = os.getenv('TOKEN_GITHUB')
-ORG_NAME = os.getenv('ORG_NAME')
+GITHUB_TOKEN = ${{ secrets.TOKEN_GITHUB }}
+ORG_NAME = ${{ secrets.ORG_NAME }}
 
 headers = {
     'Authorization': f'token {GITHUB_TOKEN}',
