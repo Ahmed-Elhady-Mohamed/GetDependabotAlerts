@@ -1,11 +1,11 @@
 import os
 import requests
 
-GITHUB_TOKEN = os.getenv('Token_Github')
+GITHUB_TOKEN = os.getenv('TOKEN_GITHUB')
 ORG_NAME = os.getenv('ORG_NAME')
 
 headers = {
-    'Authorization': f'token {Token_Github}',
+    'Authorization': f'token {GITHUB_TOKEN}',
     'Accept': 'application/vnd.github.v3+json'
 }
 
